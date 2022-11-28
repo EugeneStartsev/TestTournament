@@ -13,6 +13,7 @@ public class Main {
         System.out.println("Введите название файла со списком участников");
         String fileName = scanner.nextLine();
         peopleInTournament.savePeople(readFileContents(fileName));
+        System.out.println(peopleInTournament.generateTeams());
     }
 
     public static List<String> readFileContents(String path) {
